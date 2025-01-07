@@ -1,0 +1,84 @@
+/* Общий стиль */
+body {
+    font-family: 'Poppins', sans-serif; /* Модный шрифт */
+    background: linear-gradient(120deg, #84fab0, #8fd3f4); /* Градиент фона */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Центрирование по высоте */
+    color: #333;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Лёгкая тень */
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Поле ввода */
+input[type="text"] {
+    width: 300px;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px; /* Полукруглые края */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Объём */
+    font-size: 1.2em;
+    outline: none;
+    transition: all 0.3s ease; /* Плавные переходы */
+}
+
+input[type="text"]:focus {
+    box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.3);
+    background-color: #ffffff;
+}
+
+/* Кнопка */
+button {
+    padding: 15px 25px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #36d1dc, #5b86e5); /* Градиент */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+button:hover {
+    transform: scale(1.1); /* Лёгкое увеличение */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Больше объёма */
+}
+
+/* Результат */
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
